@@ -14,7 +14,7 @@ RUN dotnet restore generator.sln
 COPY . .
 
 # test
-ENV TEAMCITY_PROJECT_NAME=fake
+ENV TEAMCITY_PROJECT_NAME="Aspnetcore Generator Api"
 RUN dotnet test tests/tests.csproj
 
 # publish
